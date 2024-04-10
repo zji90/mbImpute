@@ -73,5 +73,5 @@ mbImpute <- function(condition = NULL, otu_tab = NULL, metadata = NULL, D = NULL
   otu_tab = data_fit2(otu_tab, metadata, D, k = k)
   print("Finished.")
   imp_count_mat_norm <- floor(10^(otu_tab) - 1.01)
-  return(list(imp_count_mat_lognorm = otu_tab, imp_count_mat_norm = imp_count_mat_norm, imp_count_mat_origlibsize = floor(imp_count_mat_norm * scale)) )
+  return(otu_tab)
 }
